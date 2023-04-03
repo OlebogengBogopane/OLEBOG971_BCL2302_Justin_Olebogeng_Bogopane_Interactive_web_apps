@@ -34,3 +34,11 @@ if (date === 2050) {
 console.log('Your status is:', status);
 console.log('The year is:', date);
 console.log('The total holidays is:', count);
+
+
+/**
+ * line 3 replaced const with let to declared number 0 and all for count to add
+ * added strict equality to my if statements if true console
+ * changed let to count line 12,16,23,27 and 31
+ * replaced count with +=additional assignment
+ */
