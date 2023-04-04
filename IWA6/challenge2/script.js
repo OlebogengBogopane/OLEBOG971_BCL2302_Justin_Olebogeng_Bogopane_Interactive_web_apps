@@ -8,12 +8,12 @@ const minuteOfDay = 0;
 
 // Only change below this line
 
-if (hourOfDay== '0' && minuteOfDay !== 0)  //(hourOfDay == '0'&& minuteOfDay == '0')// 
- {
-	const taxAsDecimal = tax / 100;
-  const startingAfterTax = salary *( '1' )- taxAsDecimal;
-	const balance = startingAfterTax- transport - food - rent;
 
-	
-console.log(balance(2));
- }
+
+ if (hourOfDay !== undefined && minuteOfDay !== undefined  && hourOfDay === 0 && minuteOfDay === 0)
+{
+    let taxAsDecimal = parseFloat(tax) / 100;
+    const startingAfterTax = salary * (1 - taxAsDecimal);
+    const balance = startingAfterTax - transport - food - rent;
+    console.log("R"+balance.toFixed(2));
+}
