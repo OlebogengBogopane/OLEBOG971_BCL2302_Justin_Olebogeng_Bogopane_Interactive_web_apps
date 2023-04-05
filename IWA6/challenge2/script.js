@@ -17,3 +17,8 @@ const minuteOfDay = 0;
     const balance = startingAfterTax - transport - food - rent;
     console.log("R"+balance.toFixed(2));
 }
+
+/**
+ * balance spelling and set .tofixed to 2 from 3
+ * Currency 'R'
+ */
