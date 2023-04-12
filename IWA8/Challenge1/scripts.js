@@ -44,3 +44,6 @@ const sarah= {
 
 console.log(leo,leo.address.postalcode);
 console.log(sarah,sarah.address.postalcode);
+
+//removed square brackets
+//added dot notation to  access a property of leo anad sarah

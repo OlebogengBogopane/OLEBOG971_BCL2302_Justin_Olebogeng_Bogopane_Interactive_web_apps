@@ -19,3 +19,9 @@ const result = `\n${leo}${sarah}${divider}\n${total}${divider}`;
 console.log(result);
 
 //**--------------------------------------------------------------------Total amount owed: NaN---------------------------------- ; //
+
+
+//parsefloat parses string leobalance as a number .toFixed(2) to decimals
+// $used to select everything in brackets
+//toFixed(2) decimals
+//backticks string interpolation
