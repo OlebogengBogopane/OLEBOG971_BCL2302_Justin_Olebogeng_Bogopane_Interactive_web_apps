@@ -35,3 +35,8 @@ const startingAfterTax = salary * 1 - taxAsDecimal;
 const type = lodging + size;
 const balance = startingAfterTax - expenses.transport - expenses.food - rent.largeapartment;
 console.log(balance.toFixed(2));
+
+//parseInt (tax[913]
+//const rent change from being a string ""
+//line 36 add startingafterTax
+//.toFixed(2) rounds the string to a specified number of decimals.
