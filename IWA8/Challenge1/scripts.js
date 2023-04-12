@@ -36,7 +36,7 @@ const sarah= {
 	address:{
 		number: sarahNumber,
 		street: sarahStreet,
-		postal_code:sarahPostal
+		postalcode:sarahPostal
     }
     }
 	
@@ -45,5 +45,7 @@ const sarah= {
 console.log(leo,leo.address.postalcode);
 console.log(sarah,sarah.address.postalcode);
 
+
+//remove leo surname
 //removed square brackets
 //added dot notation to  access a property of leo anad sarah
