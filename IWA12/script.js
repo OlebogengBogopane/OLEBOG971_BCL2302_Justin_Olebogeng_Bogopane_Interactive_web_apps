@@ -71,6 +71,8 @@ if(STATUS_MAP.overdue.canCheckout== true) {
 
 book2.checkin.style.color = ""
 book2.status.style.color = STATUS_MAP.reserved.color
+//change color to default using empty string
+
 
 if(STATUS_MAP.reserved.canReserve == true) {
     book2.reserve.enabled = true
