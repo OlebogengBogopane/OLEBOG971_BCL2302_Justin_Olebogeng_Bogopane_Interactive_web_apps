@@ -17,18 +17,21 @@ const getDaysInMonth = (date) => new Date(date.getFullYear(), date.getMonth() + 
 const createArray = (length) => {
     const result = [];
     for (let i = 0; i < length; i++) {
-        result.push(i);
+       result.push(i);
     }
     return result;
 };
 const createData = function(){
     const current = new Date();
     current.setDate(1);
+
     const startDay = current.getDay();
     const daysInMonth = getDaysInMonth(current);
+
     const weeks = createArray(6);
     const days = createArray(7);
      let result = [] //value = null
+     
     for (let weekIndex = 0; weekIndex < weeks.length; weekIndex++) {
         let value = {
             week: weekIndex + 1,
@@ -37,6 +40,7 @@ const createData = function(){
         for (let dayIndex = 0; dayIndex < days.length; dayIndex++) {
             const day = (weekIndex * 7) + dayIndex - startDay + 1;
             const isValid = day > 0 && day <= daysInMonth;
+            
             let classString = 'table__cell';
             if (dayIndex === 0 || dayIndex === 6) {
                 classString += 'table__cell_weekend';
@@ -56,6 +60,7 @@ const addCell = function(existing, classString, value) {
 };
 const createHtml = function(data) {
     let result = '';
+
     for (let i = 0; i < data.length; i++) {
       const week = data[i];
       let inner = '';
@@ -67,6 +72,7 @@ const createHtml = function(data) {
         const isToday = currentDate.getDate() === day.value && currentDate.getMonth() === currentDate.getMonth();
         const isWeekend = day.dayOfWeek === 1 || day.dayOfWeek === 7;
         const isAlternate = week.week % 2 === 0;
+
         if (isToday) {
           classString = `${classString} table__cell_today`;
         }
