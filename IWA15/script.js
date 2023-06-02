@@ -10,9 +10,9 @@ const data = {
 
 // Only edit below
 const{lists} = data;
-const  first = false ? [] : lists[0][1];
-const  second = false ? [] :lists[1][1];
-const  third  = false ? [] :lists[2][1];
+const  first = data.lists[0][1];
+const  second = data.lists[1][1];
+const  third  = data.lists[2][1];
 
 const result = []
 
@@ -23,14 +23,14 @@ const extractBiggest = () =>
 	let lastNumberInSecond = second[second.length - 1];
 	let lastNumberInThird = third[third.length - 1];
 	
-if (first && lastNumberInFirst >= lastNumberInSecond) {
+if (lastNumberInFirst >= lastNumberInSecond) {
 	biggest = lastNumberInFirst;
 	first.pop();
 	return biggest;
 
 }
 
-if (second && lastNumberInSecond > lastNumberInThird) {
+if (lastNumberInSecond > lastNumberInThird) {
 	biggest = lastNumberInSecond;
 	second.pop();
 	return biggest;

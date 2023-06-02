@@ -19,14 +19,15 @@ const createArray = (length) => {
     for (let i = 0; i < length; i++) {
        result.push(i);
     }
+    
     return result;
 };
 const createData = function(){
     const current = new Date();
-    current.setDate(1);
+    current.setDate(1);//SET DATE TO THE 1ST OF CURRENT MONTH
 
-    const startDay = current.getDay();
-    const daysInMonth = getDaysInMonth(current);
+    const startDay = current.getDay();// GETS DAY OF THE WEEK FOR THE 1ST CURRENT MONTH
+    const daysInMonth = getDaysInMonth(current);//GET NUMBER OF DAYS IN THE CURENT MONTH
 
     const weeks = createArray(6);
     const days = createArray(7);
