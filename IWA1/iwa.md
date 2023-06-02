@@ -8,6 +8,7 @@
 ---
 title: Tally App Counter
 ---
+```
 stateDiagram-v2
     [*] --> Code
     Code --> [*]
@@ -16,3 +17,5 @@ stateDiagram-v2
     App--> User interface
     Moving --> Crash
     Crash --> [*]
+
+    ```
