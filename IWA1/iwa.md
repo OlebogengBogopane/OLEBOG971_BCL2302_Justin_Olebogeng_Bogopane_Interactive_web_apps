@@ -4,18 +4,16 @@
 - Counting with incrementing button(+) and decrementing button(-)
 - Easy to use 
 
-## data
----
+## data 
 title: Tally App Counter
----
+
+``` mermaid
+erDiagramCode
+    Code 
+     App
+   User interaction
 ```
-stateDiagram-v2
-    [*] --> Code
-    Code --> [*]
-
-    Code --> App
-    App--> User interface
-    Moving --> Crash
-    Crash --> [*]
-
-    ```
+ ## requirements
+- Vs Code
+- Html
+- Css
